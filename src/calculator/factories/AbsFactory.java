@@ -21,7 +21,7 @@ public class AbsFactory extends Factory {
 			}
 		}
 		return 0.0;
-	} 
+	}
 	
 	@Override
 	public Results editPatternString(PatternString patternstr) {
