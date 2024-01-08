@@ -9,6 +9,7 @@ import calculator.factories.CommaFactory;
 import calculator.factories.ContainerRemoverFactory;
 import calculator.factories.CosFactory;
 import calculator.factories.DividerFactory;
+import calculator.factories.EmptyCharacterRemover;
 import calculator.factories.EularFactory;
 import calculator.factories.FactorFactory;
 import calculator.factories.FunctionFactory;
@@ -35,7 +36,7 @@ public class Calculator {
 	public static double evaluate(String str) {
 		if(finder == null) {
 			Calculator.finder = new PatternFinder();
-
+			Calculator.finder.addFactory(new EmptyCharacterRemover());
 			
 		  	Calculator.finder.addFactory(new FunctionFactory());
 			
