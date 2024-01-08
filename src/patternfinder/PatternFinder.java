@@ -107,6 +107,7 @@ public class PatternFinder {
 			boolean did_something = false;
 			for(Factory f : this.factories) {
 				//System.out.println("Running : "+f.toString() + " {"+patternStr+"}");
+<<<<<<< HEAD
 				did_something = f.editPatternString(patternStr).didEditString();
 				//System.out.println("Result of : "+f.toString() + " {"+patternStr+"}");
 
@@ -131,6 +132,31 @@ public class PatternFinder {
 			for(Factory f : this.extensions) {
 				System.out.println("Trying : "+f.getClass().toString());
 				did_something = f.editPatternString(patternStr).didEditString();
+=======
+				did_something = f.editPatternString(patternStr);
+				//System.out.println("Result of : "+f.toString() + " {"+patternStr+"}");
+
+				if(did_something)
+					return true;
+				
+			}
+			
+			if(!did_something)
+			break;
+		}
+		return false;
+	}
+	
+	/*Returns if did anything*/
+	private boolean runExtendedFactories(PatternString patternStr) {
+		while(true) {
+
+			//System.out.println("Got {"
+			//		+patternStr+"}");
+			boolean did_something = false;
+			for(Factory f : this.extensions) {
+				did_something = f.editPatternString(patternStr);
+>>>>>>> refs/remotes/origin/master
 				if(did_something)
 					return true;
 				
