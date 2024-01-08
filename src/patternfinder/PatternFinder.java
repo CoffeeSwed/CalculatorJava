@@ -129,7 +129,6 @@ public class PatternFinder {
 			//		+patternStr+"}");
 			boolean did_something = false;
 			for(Factory f : this.extensions) {
-				System.out.println("Trying : "+f.getClass().toString());
 				did_something = f.editPatternString(patternStr).didEditString();
 
 				if(did_something)
