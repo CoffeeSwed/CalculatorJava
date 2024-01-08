@@ -7,7 +7,6 @@ import patternfinder.pattern.Decimal;
 import patternfinder.pattern.Pattern;
 import patternfinder.pattern.Word;
 import patternfinder.pattern.factories.Factory;
-<<<<<<< HEAD
 import patternfinder.pattern.factories.results.Results;
 
 public class LnFactory extends Factory {
@@ -33,32 +32,7 @@ public class LnFactory extends Factory {
 			}
 		}
 		return this.createDefaultResultString(false);
-=======
 
-public class LnFactory extends Factory {
-
-	public static String functionName() {
-		return "ln";
-	}
-	
-	@Override
-	public boolean editPatternString(PatternString patternstr) {
-		// TODO Auto-generated method stub
-		for(int i = 0; i < patternstr.getPatterns().size();i++) {
-			if(patternstr.getPattern(i).getClass() == Function.class) {
-				Function func = (Function)patternstr.getPattern(i);
-				if(func.getName().equalsIgnoreCase(LnFactory.functionName())) {
-					Parameters parameters = func.getValue();
-					Decimal dec = (Decimal) parameters.getValues().get(0);
-					if(dec != null) {
-					patternstr.getPatterns().set(i, new Decimal(Math.log(dec.getValue().doubleValue())));
-					return true;
-					}
-				}
-			}
-		}
-		return false;
->>>>>>> refs/remotes/origin/master
 	}
 	
 }

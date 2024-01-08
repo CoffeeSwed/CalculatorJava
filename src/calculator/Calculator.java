@@ -35,7 +35,7 @@ public class Calculator {
 	public static double evaluate(String str) {
 		if(finder == null) {
 			Calculator.finder = new PatternFinder();
-<<<<<<< HEAD
+
 			
 		  	Calculator.finder.addFactory(new FunctionFactory());
 			
@@ -114,7 +114,7 @@ public class Calculator {
 			
 			Calculator.finder.addFactory(new AdditionFactory());
 			Calculator.finder.addSeperatedWord("+");
-=======
+
 			Calculator.finder.addFactory(new FunctionFactory());
 			Calculator.finder.addFactory(new CommaFactory());
 			Calculator.finder.addFactory(new ContainerRemoverFactory());
@@ -190,7 +190,6 @@ public class Calculator {
 			Calculator.finder.addFactory(new EularFactory());
 			//AddKeyWords
 			Calculator.finder.addSeperatedWord("e");
->>>>>>> refs/remotes/origin/master
 			
 			
 		}
