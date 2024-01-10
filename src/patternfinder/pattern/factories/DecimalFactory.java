@@ -38,8 +38,14 @@ public class DecimalFactory extends Factory {
 					}
 				}
 				patternstr.getPatterns().set(i, new Decimal(Double.valueOf(Double.parseDouble((String) thisone.getValue()))));
-				return this.createDefaultResultString(false);
+				return this.createDefaultResultString(true);
 			}
+			/*
+			if(thisone.getClass() == Number.class) {
+				Number number = (Number)thisone;
+				patternstr.getPatterns().set(i, new Decimal(Double.parseDouble(number.getValue())));
+				return this.createDefaultResultString(true);
+			}*/
 			
 			
 			

@@ -70,6 +70,9 @@ public class Tester {
 		Test("2load('e')",120,terminal);
 		Test("19.5+3*sin(2pi)",19.5+3.0*Math.sin(2*Math.PI),terminal);
 		Test("'19.5",0,terminal);
+		
+		Test("141*7+67*5",1322.0,terminal);
+		
 		ui.sources.Terminal input = new ui.sources.Terminal();
 		while(true) {
 			
