@@ -15,7 +15,7 @@ public class EmptyCharacterRemover extends Factory {
 				patternstr.getPatterns().remove(i);
 				return this.createDefaultResultString(true);
 				
-			}       
+			}        
 		}
 		return this.createDefaultResultString(false);
 	}
