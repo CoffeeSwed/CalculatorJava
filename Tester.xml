@@ -1,0 +1,126 @@
+<string>
+	5+5 calculated correctly to 10.0!
+</string>
+<string>
+	5+5+5 calculated correctly to 15.0!
+</string>
+<string>
+	5+(5+2+(3+1)+5) calculated correctly to 21.0!
+</string>
+<string>
+	-5 calculated correctly to -5.0!
+</string>
+<string>
+	-5+2 calculated correctly to -3.0!
+</string>
+<string>
+	5--2 calculated correctly to 7.0!
+</string>
+<string>
+	6*2 calculated correctly to 12.0!
+</string>
+<string>
+	6*2*0.5 calculated correctly to 6.0!
+</string>
+<string>
+	6*2(0.5) calculated correctly to 6.0!
+</string>
+<string>
+	6*2/2 calculated correctly to 6.0!
+</string>
+<string>
+	6*4/2 calculated correctly to 12.0!
+</string>
+<string>
+	6*4/0.5 calculated correctly to 48.0!
+</string>
+<string>
+	sin(90,degrees) calculated correctly to 1.0!
+</string>
+<string>
+	sin(-3.14) calculated correctly to -0.0015926529164868282!
+</string>
+<string>
+	sin(3.14) calculated correctly to 0.0015926529164868282!
+</string>
+<string>
+	cos(90,degrees) calculated correctly to 6.123233995736766E-17!
+</string>
+<string>
+	cos(91,degrees) calculated correctly to -0.017452406437283477!
+</string>
+<string>
+	tan(83,degrees) calculated correctly to 8.144346427974593!
+</string>
+<string>
+	20*sin(30,degrees) calculated correctly to 9.999999999999998!
+</string>
+<string>
+	asin(sin(90,degrees)) calculated correctly to 1.5707963267948966!
+</string>
+<string>
+	asin(sin(90,degrees),degrees) calculated correctly to 90.0!
+</string>
+<string>
+	2*4! calculated correctly to 48.0!
+</string>
+<string>
+	ln(2) calculated correctly to 0.6931471805599453!
+</string>
+<string>
+	ln(2*2sin(3)) calculated correctly to -0.5718502684901954!
+</string>
+<string>
+	2^2 calculated correctly to 4.0!
+</string>
+<string>
+	2^3 calculated correctly to 8.0!
+</string>
+<string>
+	2^(3/2) calculated correctly to 2.8284271247461903!
+</string>
+<string>
+	3*2^(3/2) calculated correctly to 8.485281374238571!
+</string>
+<string>
+	3*2^(-3/2) calculated correctly to 1.0606601717798214!
+</string>
+<string>
+	3*2^-(3/2) calculated correctly to 1.0606601717798214!
+</string>
+<string>
+	3! calculated correctly to 6.0!
+</string>
+<string>
+	4! calculated correctly to 24.0!
+</string>
+<string>
+	784471/4745*-3 calculated correctly to -495.97744994731295!
+</string>
+<string>
+	pi calculated correctly to 3.141592653589793!
+</string>
+<string>
+	pi*1/pi calculated correctly to 1.0!
+</string>
+<string>
+	e^ln(e) calculated correctly to 2.718281828459045!
+</string>
+<string>
+	e^2 calculated correctly to 7.3890560989306495!
+</string>
+<string>
+	abs(784471/4745*-3) calculated correctly to 495.97744994731295!
+</string>
+<string>
+	storeas(30,'e') calculated correctly to 30.0!
+</string>
+<string>
+	2load('e') calculated correctly to 60.0!
+</string>
+<string>
+	storeas(2load('e'),'e') calculated correctly to 60.0!
+</string>
+<string>
+	2load('e') calculated correctly to 120.0!
+</string>
