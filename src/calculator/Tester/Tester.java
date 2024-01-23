@@ -73,6 +73,10 @@ public class Tester {
 		
 		Test("141*7+67*5",1322.0,terminal);
 		
+		Test("5E2",500,terminal);
+		Test("5E+2",500,terminal);
+		Test("5E-2",0.05,terminal);
+		
 		ui.sources.Terminal input = new ui.sources.Terminal();
 		while(true) {
 			

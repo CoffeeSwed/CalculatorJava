@@ -15,10 +15,11 @@ public class NumberFactory  extends Factory{
 		for(int i = 0; i < patternstr.getPatterns().size();i++) {
 			Pattern thisone = patternstr.getPatterns().get(i);
 			if(thisone.getClass() == Symbol.class) {
-				if(Character.isDigit(((String)thisone.getValue()).charAt(0))) {
-					patternstr.getPatterns().set(i, new Number((String) thisone.getValue()));
-					return this.createDefaultResultString(true);
-				}
+				if(((String)thisone.getValue()).length() > 0)
+					if(Character.isDigit(((String)thisone.getValue()).charAt(0))) {
+						patternstr.getPatterns().set(i, new Number((String) thisone.getValue()));
+						return this.createDefaultResultString(true);
+					}
 				
 			}
 			if(i >= 1) {

@@ -9,6 +9,7 @@ import calculator.factories.CommaFactory;
 import calculator.factories.ContainerRemoverFactory;
 import calculator.factories.CosFactory;
 import calculator.factories.DividerFactory;
+import calculator.factories.EPrefixFactory;
 import calculator.factories.EmptyCharacterRemover;
 import calculator.factories.EularFactory;
 import calculator.factories.FactorFactory;
@@ -187,10 +188,16 @@ public class Calculator {
 			//AddKeyWords
 			Calculator.finder.addSeperatedWord("pi");
 	
+			Calculator.finder.addFactory(new EPrefixFactory());
+			
+			Calculator.finder.addSeperatedWord("E");
+			
 			//e (Eular)
 			Calculator.finder.addFactory(new EularFactory());
 			//AddKeyWords
 			Calculator.finder.addSeperatedWord("e");
+			
+			
 			
 			
 		}
