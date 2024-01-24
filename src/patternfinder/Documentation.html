@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<h1>patternfinder</h1>
+<p>This package contains the classes which are used to create the
+patternstring used by the calculator and contains default factories
+like <b>DecimalFactory</b>,<b> WordFactory</b> and etc. The class
+PatternFinder is what is used to create an PatternString and is
+called by the calculator to create/calculate a string. 
+
+<h2>Factories</h2>
+<h3>What they do</h3>
+<p>The factories will go through a patternstring and do appropriate actions based on the factory.
+For example, WordFactory will create patterns of the word pattern.</p>
+<h3>When they are called/used?</h3>
+<p>The factories are called atleast once, and the order of the factories
+called depends on the order of which they are added to the lists <b>PatternFinder.factories</b> and <b>PatternFinder.extensions</b>.
+The factories in the list <b>PatternFinder.factories</b> are called first. 
+If the Factory return an instance of <b>patternfinder.pattern.factories.Result</b> with the "tag" <b>didEditPattern true</b>, all the factories will be iterated again, stopping the current iteration. 
+</p>
+<h4>Note</h4>
+<p>Note that <b>specialWordFinder</b> is a "standard" factory, called just before the factories of the list <b>PatternFinder.extensions</b>!
+</html>

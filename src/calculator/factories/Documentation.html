@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<h1>Calculator.Factories</h1>
+<h2>What the classes do</h2>
+<p>The classes in this package are factories which are goes through a patternString
+ and performs appropriate mathematical actions!</p>
+ <p>For example, the AdditionFactory will look for a pattern of
+ Decimal Symbol Decimal and if the Symbol value equals to "+",
+ it will perform addition on the two decimals and replace the first
+ Decimal pattern with the Result and remove the other two.</p>
+ <h2>Which factory is executed first?</h2>
+<p>The patterns are added to patternFinder in the class calculator.Calculator
+and the order of the factories added decides on which factory will be called first.
+Note that specialWordFinder is used to make sure function names and etc
+are their own words, for example "esin" would be divided into
+Symbol "e" and the word "sin"</p>
+<h2>The special StorageFactory</h2>
+<p>The storage factory classes located in factories.storagefactory
+are special and can store variables, for example, if one enters
+storeas(129.0,"e"), and then enters load("e"), the load("e") part of a patternString
+will be replaced with 129.0
+<h2>Special patterns</h2>
+Special patterns created by the calculator are in the calculator.patterns package.
+</html>
