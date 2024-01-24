@@ -13,7 +13,6 @@ public class FactorFactory extends PowerFactory{
 	@Override
 	public double evaluate(Function function) {
 		// TODO Auto-generated method stub
-		System.out.println("Evaluate for factor called!");
 		Parameters parameters = function.getValue();
 		if(parameters.getValues().size() == 1) {
 			if(parameters.getValues().get(0).getClass() == Decimal.class) {

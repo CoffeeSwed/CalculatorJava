@@ -76,6 +76,70 @@ public class Tester {
 		Test("5E2",500,terminal);
 		Test("5E+2",500,terminal);
 		Test("5E-2",0.05,terminal);
+		Test("2^5*2",64.0,terminal);
+		
+		/*Multiply and addition*/
+		Test("2*3 + 4",2.0*3.0 + 4,terminal);
+		Test("2+3 * 4",2.0+3.0 * 4,terminal);
+		Test("2+3 * 4 + 4",2.0+3.0 * 4 + 4,terminal);
+
+		/*Multiply and subtract*/
+		Test("2*3 - 4",2.0*3.0 - 4,terminal);
+		Test("2-3 * 4",2.0-3.0 * 4,terminal);
+		Test("2-3 * 4 - 4",2.0-3.0 * 4 - 4,terminal);
+
+		/*Multiply and power*/
+		Test("2*3^2",18,terminal);
+		Test("2^3*2",16,terminal);
+		
+		//Power power
+		Test("2^3^2",512,terminal);
+		
+		//Power and addition
+		Test("1+2^3",9,terminal);
+		Test("1.2+2.1^3.1",11.174239992658709,terminal);
+		Test("1+1+1+2^1",5,terminal);
+		
+		//Power and subtraction
+		Test("1-2^3",-7,terminal);
+		Test("1.2-2.1^3.1",-8.77423999265871,terminal);
+		Test("1+1+1-2^1",1.0,terminal);
+		Test("1-2^-3",0.875,terminal);
+
+		//Addition and power
+		//Covered
+		
+		//Addition and subtraction
+		Test("1+-2",-1,terminal);
+		Test("1-2",-1,terminal);
+		Test("1+2-3",0,terminal);
+		Test("-1----2",1.0,terminal);
+		
+		//Addition and divide
+		Test("1/3+1",1.0/3.0 + 1,terminal);
+		Test("1+1/3+1",1.0+1.0/3.0 + 1,terminal);
+		Test("1+1/3+1+1/3/3",1.0+1.0/3.0+1.0+1.0/3.0/3.0,terminal);
+		
+		//Subtract and power
+		
+		//Subtraction and addition
+		//Covered
+		
+		//Subtract and divide
+		Test("1/3-1",1.0/3.0 - 1,terminal);
+		Test("-1-1/3-1",-1.0-1.0/3.0 - 1,terminal);
+		Test("1-1/3+1-1/3/3",1.0-1.0/3.0+1.0-1.0/3.0/3.0,terminal);
+
+		//Divide and power
+		Test("1/3^2",0.1111111111111111,terminal);
+		Test("2^3/2",Math.pow(2, 3)/2.0,terminal);
+		Test("2^(3/2)",Math.pow(2, 3.0/2.0),terminal);
+		
+		//Divide and addition
+		//Covered
+		
+		//Subtraction and divide
+		//Covered
 		
 		ui.sources.Terminal input = new ui.sources.Terminal();
 		while(true) {
@@ -105,8 +169,8 @@ public class Tester {
 				System.exit(0);
 			}
 		}
-		catch(IOException e) {
-			
+		catch(Exception e) {
+			System.out.println(e);
 		}
 	}
 

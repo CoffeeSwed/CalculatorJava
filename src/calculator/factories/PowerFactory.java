@@ -38,7 +38,7 @@ public class PowerFactory extends Factory implements ShouldKeepRemovingInterface
 	@Override
 	public Results editPatternString(PatternString patternstr) {
 		// TODO Auto-generated method stub
-		for(int i = 0; i < patternstr.getPatterns().size();i++) {
+		for(int i = patternstr.getPatterns().size()-1; i > 0;i--) {
 			Pattern p = patternstr.getPatterns().get(i);
 			if(p.getClass() == Symbol.class) {
 				Symbol symbol = (Symbol)p;

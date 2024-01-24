@@ -14,7 +14,6 @@ public class MutliplyFactory extends Factory {
 		for(int i = 0; i < patternstr.getPatterns().size();i++) {
 			if(patternstr.isPatternAt(i, Decimal.class, Symbol.class, Decimal.class)) {
 				if(patternstr.getPattern(i+1).getValue().toString().equalsIgnoreCase("*")) {
-					System.out.println("True here to for : "+patternstr);
 					Double first = (Double)patternstr.getPattern(i).getValue();
 					Double second = (Double)patternstr.getPattern(i+2).getValue();
 					
@@ -22,7 +21,6 @@ public class MutliplyFactory extends Factory {
 					patternstr.getPatterns().remove(i+1);
 					patternstr.getPatterns().remove(i+1);
 					
-					System.out.println("It's now : "+patternstr);
 					return this.createDefaultResultString(true);
 					
 				}
